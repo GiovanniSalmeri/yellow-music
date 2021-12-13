@@ -20,20 +20,20 @@ A simple musical score in ABC notation:
     L: 1/8
     K: B
     %%vocalfont Open Sans 9
-    z CDC D4 | z CDC D2 E2 | C8 | B,CB, C F2 (B, | 
+    z CDC D4 | z CDC D2 E2 | C8 | z B,CB, C F2 (B, | 
     w: Look at the stars | Look how they shine for you | And all the things you do
-    B),8 | z2 z/ G,/B,/G,/ (B,>G,) B,/(G,/F,/) z/| z CDC D4 | 
-    w: | Yeah they were all * yel-low* | I came a-long
-    CDC D2 E2 | C8 | B,CB, C F2 (B, | B,8) | 
-    w: I wrote a song for | you | And ev-'ry thing you do *
-    z2 z/ G,/B,/G,/ B,>(G, B,)/(G,/F,/) z/| z8 | z CDC D F2 C | z8 | 
-    w: And it was called yel*low* | So then I took my turn
-    z B,CB, C F2 B, | z8 | z z/ G,/ B,/G,/ B,3 G,/(B,/G,/) z/ | z8 | z8 | 
-    w: Oh what a thing to~'ve done | And it was all yel-low*
+    B),8 | z2 z/ G,/B,/G,/ (B,>G,) B,/(G,/F,/) z/| z CDC D4 | z CDC D2 E2 | 
+    w: | Yeah they were all * yel-low * | I came a-long | I wrote a song for
+    C8 | z B,CB, C F2 (B, | B,8) | z2 z/ G,/B,/G,/ B,>(G, B,)/(G,/F,/) z/| 
+    w: you | And ev-'ry thing you do * | And it was called yel * low *
+    z8 | z CDC D F2 C | z8 | z B,CB, C F2 B, | 
+    w: So then I took my turn | Oh what a thing to~'ve done
+    z8 | z z/ G,/ B,/G,/ B,3 G,/(B,/G,/) z/ | z8 | z8 | 
+    w: And it was all yel-low* | 
     z2 B,2(G3F) | z B,B,F FD D2 | z2 B,2(G3F) | z B,B,F FD D2 | 
-    w: Your skin* | Oh yeah your skin and bones | Turn in-*to | some-thing beau-ti-ful
-    z2 B,2(G3F) | z B,B,F FD (D2 | G,8) | z B,B,F FD (D2 | F,8)|
-    w: You know* You know I love you so* You know I love you so*
+    w: Your skin* | Oh yeah your skin and bones | Turn in-* | to some-thing beau-ti-ful
+    z2 B,2(G3F) | z B,B,F FD (D2 | G,8) | z B,B,F FD (D2 | F,8)| 
+    w: You know * | You know I love you so | * | You know I love you so *
     ```
 
 ## Installation
