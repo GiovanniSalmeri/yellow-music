@@ -40,7 +40,7 @@ A simple musical score in ABC notation:
 
 [Download extension](https://github.com/GiovanniSalmeri/yellow-music/archive/master.zip) and copy zip file into your `system/extensions` folder. Right click if you use Safari.
 
-This extension uses [abcjs](https://paulrosen.github.io/abcjs/) by Paul Rosen and Gregory Dyke. This library has [a few minor differences](https://paulrosen.github.io/abcjs/overview/abc-notation.html) from ABC standard.
+This extension uses [abcjs 6.0.0](https://paulrosen.github.io/abcjs/) by Paul Rosen and Gregory Dyke. This library has [a few minor differences](https://paulrosen.github.io/abcjs/overview/abc-notation.html) from ABC standard.
 
 ## Developer
 
