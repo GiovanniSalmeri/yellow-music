@@ -36,6 +36,12 @@ A simple musical score in ABC notation:
     w: You know* You know I love you so* You know I love you so*
     ```
 
+## Settings
+
+The following setting can be configured in file `system/extensions/yellow-system.ini`:
+
+`MusicReflow` (default = `1`) = reflow the score according to the space available (intead of resizing it)  
+
 ## Installation
 
 [Download extension](https://github.com/GiovanniSalmeri/yellow-music/archive/master.zip) and copy zip file into your `system/extensions` folder. Right click if you use Safari.
