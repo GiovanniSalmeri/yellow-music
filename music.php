@@ -10,7 +10,7 @@ class YellowMusic {
         $this->yellow = $yellow;
         $this->yellow->system->setDefault("musicReflow", "1");
     }
-    
+
     // Handle page extra data
     public function onParsePageExtra($page, $name) {
         $output = null;
