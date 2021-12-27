@@ -16,6 +16,7 @@ class YellowMusic {
         $output = null;
         if ($name=="header") {
             $extensionLocation = $this->yellow->system->get("coreServerBase").$this->yellow->system->get("coreExtensionLocation");
+            $output .= "<link rel=\"stylesheet\" type=\"text/css\" media=\"all\" href=\"{$extensionLocation}music.css\" />\n";
             $musicReflow = $this->yellow->system->get("musicReflow");
             $output .= "<script type=\"text/javascript\">var musicReflow = ".json_encode((bool)$musicReflow)."</script>\n";
             $output .= "<script type=\"text/javascript\" src=\"{$extensionLocation}abcjs-basic-min.js\"></script>\n";
