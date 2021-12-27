@@ -19,7 +19,7 @@ class YellowMusic {
             $output .= "<link rel=\"stylesheet\" type=\"text/css\" media=\"all\" href=\"{$extensionLocation}music.css\" />\n";
             $musicReflow = $this->yellow->system->get("musicReflow");
             $output .= "<script type=\"text/javascript\">var musicReflow = ".json_encode((bool)$musicReflow)."</script>\n";
-            $output .= "<script type=\"text/javascript\" src=\"{$extensionLocation}abcjs-basic-min.js\"></script>\n";
+            $output .= "<script type=\"text/javascript\" src=\"{$extensionLocation}music-abcjs.js\"></script>\n";
             $output .= "<script type=\"text/javascript\" defer=\"defer\" src=\"{$extensionLocation}music.js\"></script>\n";
         }
         return $output;
