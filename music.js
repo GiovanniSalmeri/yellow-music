@@ -1,10 +1,20 @@
 "use strict";
 document.addEventListener("DOMContentLoaded", function() {
     var scores = document.querySelectorAll("pre.music");
-    scores.forEach(function(score) {
+    scores.forEach(function(score, i) {
+        // accessibility
+        var scoreText = score.firstChild.textContent;
+        var accessibleText = document.createElement("PRE");
+        accessibleText.style.display = "none";
+        accessibleText.id = "music"+i;
+        accessibleText.textContent = scoreText;
+        score.insertAdjacentElement("afterend", accessibleText);
+        score.setAttribute("role", "img");
+        score.setAttribute("aria-describedby", "music"+i);
+        // draw score
         if (musicReflow) {
             score.firstChild.style.display = "block";
-            score.firstChild.dataset.source = score.firstChild.textContent;
+            score.firstChild.dataset.source = scoreText;
             score.firstChild.dataset.lastWidth = "0";
             window.addEventListener("resize", function() {
                 if (Math.abs(score.firstChild.dataset.lastWidth-score.firstChild.offsetWidth)>2) { // cope for rounding errors
@@ -13,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 }
             });
         } else {
-            ABCJS.renderAbc(score.firstChild, score.firstChild.textContent, { responsive: 'resize' } );
+            ABCJS.renderAbc(score.firstChild, scoreText, { responsive: 'resize' } );
         }
     });
 }, false);
