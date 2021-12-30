@@ -4,6 +4,12 @@ document.addEventListener("DOMContentLoaded", function() {
     scores.forEach(function(score, i) {
         // accessibility
         var scoreText = score.firstChild.textContent;
+        var metadata = [];
+        [/^C:\s*(.*?)\s*$/m, /^T:\s*(.*?)\s*$/m].forEach(function(re) {
+            var match = scoreText.match(re);
+            if (match) metadata.push(match[1]);
+        });
+        var label = metadata.join(', ');
         var accessibleText = document.createElement("PRE");
         accessibleText.style.display = "none";
         accessibleText.id = "music"+i;
@@ -11,6 +17,7 @@ document.addEventListener("DOMContentLoaded", function() {
         score.insertAdjacentElement("afterend", accessibleText);
         score.setAttribute("role", "img");
         score.setAttribute("aria-describedby", "music"+i);
+        if (label) score.setAttribute("aria-label", label);
         // draw score
         if (musicReflow) {
             score.firstChild.style.display = "block";
