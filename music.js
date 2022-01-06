@@ -1,3 +1,5 @@
+// Music extension, https://github.com/GiovanniSalmeri/yellow-music
+
 "use strict";
 document.addEventListener("DOMContentLoaded", function() {
     var scores = document.querySelectorAll("pre.music");
