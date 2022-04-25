@@ -4,7 +4,7 @@ Display music scores.
 
 <p align="center"><img src="music-screenshot.png?raw=true" width="795" height="836" alt="Screenshot"></p>
 
-## How to display a music score
+## How to show a music score
 
 Write the music score in [ABC notation](https://abcnotation.com/) and put it into a block code with the attribute `music`. ABC is a format that allows to write easily simple and complex musical scores, even without a graphical editor.
 
