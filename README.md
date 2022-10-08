@@ -50,4 +50,4 @@ This extension uses [abcjs 6.0.0](https://paulrosen.github.io/abcjs/) by Paul Ro
 
 ## Developer
 
-Giovanni Salmeri. [Get help](https://github.com/GiovanniSalmeri/yellow-music/issues).
+Giovanni Salmeri. [Get help](https://datenstrom.se/yellow/help/)
