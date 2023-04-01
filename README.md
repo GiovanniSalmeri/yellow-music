@@ -4,15 +4,21 @@ Display music scores.
 
 <p align="center"><img src="music-screenshot.png?raw=true" alt="Screenshot"></p>
 
+## How to install an extension
+
+[Download ZIP file](https://github.com/GiovanniSalmeri/yellow-music/archive/main.zip) and copy it into your `system/extensions` folder. [Learn more about extensions](https://github.com/annaesvensson/yellow-update).
+
 ## How to show a music score
 
-Write the music score in [ABC notation](https://abcnotation.com/) and put it into a block code with the attribute `music`. ABC is a format that allows to write easily simple and complex musical scores, even without a graphical editor.
+You can write a music score with [ABC notation](https://abcnotation.com/). ABC is a format that allows to write easily simple and complex musical scores, even without a graphical editor. The library used has [a few minor differences](https://paulrosen.github.io/abcjs/overview/abc-notation.html) from ABC standard.
 
-## Example
+Insert the music score with a code block. Wrap the data in \`\`\` and add the language identifier `music`.
+
+## Examples
 
 A simple musical score in ABC notation:
 
-    ```music
+    ``` music
     X: 1
     T: Yellow
     Q: 1/4=60
@@ -38,16 +44,14 @@ A simple musical score in ABC notation:
 
 ## Settings
 
-The following setting can be configured in file `system/extensions/yellow-system.ini`:
+The following settings can be configured in file `system/extensions/yellow-system.ini`:
 
 `MusicReflow` (default = `1`) = reflow the score according to the space available (intead of resizing it)  
 
-## Installation
+## Acknowledgements
 
-[Download extension](https://github.com/GiovanniSalmeri/yellow-music/archive/main.zip) and copy zip file into your `system/extensions` folder. Right click if you use Safari.
-
-This extension uses [abcjs 6.0.0](https://paulrosen.github.io/abcjs/) by Paul Rosen and Gregory Dyke. This library has [a few minor differences](https://paulrosen.github.io/abcjs/overview/abc-notation.html) from ABC standard.
+This extension includes [abcjs 6.0.0](https://paulrosen.github.io/abcjs/) by Paul Rosen and Gregory Dyke. Thank you for the good work.
 
 ## Developer
 
-Giovanni Salmeri. [Get help](https://datenstrom.se/yellow/help/)
+Giovanni Salmeri. [Get help](https://datenstrom.se/yellow/help/).
