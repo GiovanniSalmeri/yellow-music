@@ -1,6 +1,6 @@
 Music 0.8.18
 ============
-Display music scores.
+Music scores.
 
 <p align="center"><img src="music-screenshot.png?raw=true" alt="Screenshot"></p>
 
@@ -10,7 +10,7 @@ Display music scores.
 
 ## How to show a music score
 
-You can write a music score with [ABC notation](https://abcnotation.com/). ABC is a format that allows to write easily simple and complex musical scores, even without a graphical editor. The library used has [a few minor differences](https://paulrosen.github.io/abcjs/overview/abc-notation.html) from ABC standard.
+You can write a music score with [ABC notation](https://abcnotation.com/). ABC is a format that allows to write easily both simple and complex musical scores, even without a graphical editor. The library used has [a few minor differences](https://paulrosen.github.io/abcjs/overview/abc-notation.html) from ABC standard.
 
 Insert the music score with a code block. Wrap the data in \`\`\` and add the language identifier `music`.
 
@@ -44,7 +44,7 @@ A simple musical score in ABC notation:
 
 ## Settings
 
-The following settings can be configured in file `system/extensions/yellow-system.ini`:
+The following setting can be configured in file `system/extensions/yellow-system.ini`:
 
 `MusicReflow` = reflow the score according to the space available (intead of resizing it)  
 
