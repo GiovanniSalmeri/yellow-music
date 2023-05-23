@@ -46,7 +46,7 @@ A simple musical score in ABC notation:
 
 The following settings can be configured in file `system/extensions/yellow-system.ini`:
 
-`MusicReflow` (default = `1`) = reflow the score according to the space available (intead of resizing it)  
+`MusicReflow` = reflow the score according to the space available (intead of resizing it)  
 
 ## Acknowledgements
 
