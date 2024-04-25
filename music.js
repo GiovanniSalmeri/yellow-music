@@ -31,6 +31,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     ABCJS.renderAbc(score.firstChild, score.firstChild.dataset.source, { paddingleft: 0, paddingright: 0, staffwidth: score.firstChild.offsetWidth-2, wrap: { minSpacing: 1.8, maxSpacing: 2.7, preferredMeasuresPerLine: 4 }, oneSvgPerLine: true } );
                 }
             });
+            window.dispatchEvent(new Event('resize'));
         } else {
             ABCJS.renderAbc(score.firstChild, scoreText, { responsive: 'resize' } );
         }

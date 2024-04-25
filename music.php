@@ -2,7 +2,7 @@
 // Music extension, https://github.com/GiovanniSalmeri/yellow-music
 
 class YellowMusic {
-    const VERSION = "0.8.18";
+    const VERSION = "0.9.1";
     public $yellow;         // access to API
     
     // Handle initialisation
@@ -15,12 +15,12 @@ class YellowMusic {
     public function onParsePageExtra($page, $name) {
         $output = null;
         if ($name=="header") {
-            $extensionLocation = $this->yellow->system->get("coreServerBase").$this->yellow->system->get("coreExtensionLocation");
-            $output .= "<link rel=\"stylesheet\" type=\"text/css\" media=\"all\" href=\"{$extensionLocation}music.css\" />\n";
+            $assetLocation = $this->yellow->system->get("coreServerBase").$this->yellow->system->get("coreAssetLocation");
+            $output .= "<link rel=\"stylesheet\" type=\"text/css\" media=\"all\" href=\"{$assetLocation}music.css\" />\n";
             $musicReflow = $this->yellow->system->get("musicReflow");
             $output .= "<script type=\"text/javascript\">var musicReflow = ".json_encode((bool)$musicReflow)."</script>\n";
-            $output .= "<script type=\"text/javascript\" src=\"{$extensionLocation}music-abcjs.js\"></script>\n";
-            $output .= "<script type=\"text/javascript\" defer=\"defer\" src=\"{$extensionLocation}music.js\"></script>\n";
+            $output .= "<script type=\"text/javascript\" src=\"{$assetLocation}music-abcjs.js\"></script>\n";
+            $output .= "<script type=\"text/javascript\" defer=\"defer\" src=\"{$assetLocation}music.js\"></script>\n";
         }
         return $output;
     }
