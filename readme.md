@@ -1,8 +1,8 @@
-# Music 0.9.1
+# Music 1.0.0
 
-Music scores.
+Music scores. Developed by Giovanni Salmeri.
 
-<p align="center"><img src="SCREENSHOT.png" alt="Screenshot"></p>
+<p align="center"><img src="screenshot.png" alt="Screenshot"></p>
 
 ## How to install an extension
 
@@ -50,8 +50,6 @@ The following setting can be configured in file `system/extensions/yellow-system
 
 ## Acknowledgements
 
-This extension includes [abcjs 6.0.0](https://paulrosen.github.io/abcjs/) by Paul Rosen and Gregory Dyke. Thank you for the good work.
+This extension includes [abcjs 6.0.0](https://paulrosen.github.io/abcjs/) by Paul Rosen and Gregory Dyke. Thank you for the useful library.
 
-## Developer
-
-Giovanni Salmeri. [Get help](https://datenstrom.se/yellow/help/).
+Do you have questions? [Get help](https://datenstrom.se/yellow/help/).
